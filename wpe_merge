@@ -1,0 +1,6 @@
+###################################################
+# call with input parameters to merge accounts
+# usage: wpe_merge <dir/inputfile> <outputfile>
+###################################################
+mvn package
+mvn exec:java -Dexec.mainClass="com.wpengine.merger.WPMerger" -Dexec.args="$1 $2"
